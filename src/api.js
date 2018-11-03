@@ -11,3 +11,8 @@ socket.on('connect', ()=>{
 socket.on('disconnect', ()=>{
     console.log('Disconnected from server');
 });
+
+socket.on('newMessage', (data)=>{
+    console.log('You has a new message',data);
+    
+});
